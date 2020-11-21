@@ -1,0 +1,687 @@
+/* CSS Index
+------------------------------------
+
+01. Template Default CSS 
+02. header css
+
+
+
+
+
+
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700;800;900&display=swap');
+
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus,
+button:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ..................................
+ 02. header css 
+.................................. */
+.topbar {
+  padding: 9px 0;
+  background: #000000;
+}
+
+.top-element {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.top-element i {
+  margin-right: 5px;
+}
+
+#top-phone {
+  float: right;
+}
+
+header {
+  background: #fafafa;
+}
+
+.main-menu .dropdown-toggle::after {
+  display: none;
+}
+
+.main-menu .navbar-brand {
+  max-width: 300px;
+}
+
+.main-menu .nav-link {
+  padding: 25px 0px !important;
+  font-weight: 600;
+  font-size: 15px;
+  color: #131238 !important;
+  margin: 0 10px;
+  position: relative;
+}
+
+.main-menu .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+
+.main-menu .nav-link:hover {
+  color: #13123896 !important;
+}
+
+.main-menu .nav-item.active .nav-link {
+  color: #673ab7 !important;
+}
+
+.main-menu .nav-item.active .nav-link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  width: 100%;
+  height: 3px;
+  background: #673ab7;
+}
+
+.main-menu .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.main-menu .dropdown-item {
+  padding: 10px 15px 10px 25px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.main-menu .dropdown-item:active {
+  background: #f8f9fa;
+  color: unset;
+}
+
+.main-menu .dropdown-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 0;
+  background: #673ab7;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.main-menu .dropdown-item:hover:before {
+  height: 100%;
+}
+
+.main-menu .dropdown-item i {
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+}
+
+
+/* ..................................
+ 01. home CSS 
+.................................. */
+.home {
+  height: 680px;
+  background: url(../img/home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.home-content h1 {
+  font-size: 65px;
+  /* line-height: 70px; */
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.home-content h1 span {
+  color: #673ab7;
+}
+
+.home-content p {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  border: 2px solid #673ab7;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.home-btn {
+  padding: 12px 30px;
+  color: #fff;
+  position: relative;
+}
+
+.home-btn:hover {
+  color: #673ab7;
+}
+
+.home-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #673ab7;
+  z-index: -1;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.home-btn:hover:before {
+  width: 0;
+}
+
+.home-form-wrapeer {
+  display: flex;
+  justify-content: center;
+}
+
+.home-form {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 6px rgba(91, 130, 148, .08);
+  box-shadow: 0 3px 6px rgba(91, 130, 148, .08);
+}
+
+.home-form-header {
+  padding: 20px 0;
+  background: rgba(212, 212, 212, 0.85);
+  border-bottom: 3px solid #673ab7;
+  text-align: center;
+}
+
+.home-form-header h2 {
+  font-size: 34px;
+  color: #131238;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.home-form-header p {
+  font-size: 17px;
+  color: #131238;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.home-form-body {
+  padding: 40px 30px 25px;
+}
+
+.home-single-input input,
+.home-single-input select {
+  width: 100%;
+  height: 45px;
+  padding: 0px 15px;
+  margin: 0px 0 10px 0;
+  border-radius: 8px;
+  color: #172b43;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(91, 130, 148, .08);
+  box-shadow: 0 3px 6px rgba(91, 130, 148, .08);
+  border: 1px solid #e6e6e6;
+}
+
+.home-single-input select {
+  color: #6e6e6e;
+}
+
+.home-single-input input:focus,
+.home-single-input select:focus {
+  border: 1px solid #673ab7;
+}
+
+.home-single-input select option {
+  color: #172b43;
+}
+
+.home-apply-btn {
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background: #673ab7;
+  color: #fff;
+}
+
+.home-apply-btn:hover {
+  color: #fff;
+  box-shadow: inset 5px 5px 20px rgb(53, 20, 109);
+}
+
+/* ..................................
+ 01. service CSS
+.................................. */
+.service {
+  /* margin-top: -50px; */
+  padding: 70px 0;
+}
+
+.single-service {
+  height: 100%;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #673AB7;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 18px -5px, rgba(0, 0, 0, 0.1) 0px 1px 15px -5px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.single-service:hover {
+  transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+}
+
+.single-service .icon svg {
+  width: 80px;
+  fill: #673ab7;
+  margin-bottom: 25px;
+}
+
+.single-service h4 {
+  font-size: 21px;
+  color: #673ab7;
+}
+
+.single-service p {
+  font-size: 16px;
+  color: #6e6e6e;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.border-btn {
+  padding: 10px 25px;
+  color: #673ab7;
+}
+
+.border-btn:hover {
+  background: #673ab7;
+  color: #fff;
+}
+
+/* ..................................
+ 01. about CSS 
+.................................. */
+.about,
+.news {
+  padding: 120px 0;
+  background: #f8f9fa;
+}
+
+.about-content h5,
+.news-content h5 {
+  font-size: 18px;
+  color: #673AB7;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-content h3,
+.news-content h3 {
+  font-size: 32px;
+  color: #131238;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.about-content p,
+.news-content p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #6e6e6e;
+  margin-bottom: 25px;
+}
+
+.about-img,
+.news-img {
+  text-align: center;
+}
+
+.main-btn {
+  padding: 10px 25px;
+  background: #673AB7;
+  color: #ffffff;
+}
+
+.main-btn:hover {
+  color: #673ab7;
+  background: transparent;
+}
+
+
+
+
+/* ..................................
+ 01. c2a CSS 
+.................................. */
+.c2a {
+  background: url(../img/c2a.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 110px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.c2a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.c2a-content {
+  text-align: center;
+}
+
+.c2a-content h2 {
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+  word-spacing: 15px;
+  margin-bottom: 35px;
+}
+
+.c2a-content p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+/* ..................................
+ 01. news CSS 
+.................................. */
+.news-content h3 {
+  margin-bottom: 20px;
+}
+
+.news-content h3 {
+  font-size: 26px;
+}
+
+
+/* ..................................
+ 01. footer CSS 
+.................................. */
+footer {
+  padding: 50px 0;
+  background-image: linear-gradient(135deg, transparent 0%, transparent 55%, rgba(183, 183, 183, 0.05) 55%, rgba(183, 183, 183, 0.05) 84%, transparent 84%, transparent 100%), linear-gradient(90deg, rgb(16 0 43), rgb(16 0 43));
+}
+
+.foor-logo {
+  text-align: center;
+}
+
+.foot-logo img {
+  width: 60px;
+}
+
+.foot-desc p,
+.learning-links li {
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.foot-head {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.learning-links li {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.learning-links li::before {
+  content: '\f105';
+  font-weight: 400;
+  font-family: 'Font Awesome 5 Pro';
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.learning-links li:hover {
+  transform: translateX(6px);
+  -webkit-transform: translateX(6px);
+  -moz-transform: translateX(6px);
+  -ms-transform: translateX(6px);
+  -o-transform: translateX(6px);
+}
+
+.foot-contact-info {
+  margin-bottom: 30px;
+}
+
+.foot-contact-info li {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.foot-contact-info li i {
+  width: 40px;
+}
+
+.foot-contact-info li span {
+  margin-top: -5px;
+  flex: 1;
+}
+
+.foot-social li {
+  display: inline-block;
+  margin: 8px;
+}
+
+.foot-social li:first-child {
+  margin-left: 0;
+}
+
+.foot-social li i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 30px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.foot-social li#f-fb:hover i {
+  background: #3b5999;
+  color: #fff;
+}
+
+.foot-social li#f-insta:hover i {
+  background: #e4405f;
+  color: #fff;
+}
+
+.foot-social li#f-linkdin:hover i {
+  background: #0077B5;
+  color: #fff;
+}
+
+.foot-social li#f-youtube:hover i {
+  background: #cd201f;
+  color: #fff;
+}
+
+.footer-link {
+  padding: 20px 0;
+  color: #fff;
+  background: #11012C;
+  border-top: 1px solid rgb(87, 87, 87);
+  border-bottom: 1px solid rgb(87, 86, 86);
+}
+
+.privacy-links li:hover {
+  color: rgb(197, 197, 197);
+  text-decoration: underline;
+}
+
+.privacy-links {
+  float: right;
+}
+
+.privacy-links li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.privacy-links li:last-child {
+  margin-right: 0;
+}
+
+
+/* ------------------------ */
